@@ -149,6 +149,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Auto'**
   String get auto;
+
+  /// Label for onboarding skip
+  ///
+  /// In en, this message translates to:
+  /// **'Skip'**
+  String get skip;
+
+  /// Label for onboarding next
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get next;
+
+  /// Label for onboarding getStarted
+  ///
+  /// In en, this message translates to:
+  /// **'Get Started'**
+  String get getStarted;
+
+  /// Label for onboarding title 1
+  ///
+  /// In en, this message translates to:
+  /// **'Launch ideas faster'**
+  String get onboardingTitle1;
+
+  /// Label for onboarding title 1 description
+  ///
+  /// In en, this message translates to:
+  /// **'Start your next Flutter app with production-ready architecture, themes, routing, and localization already setup.'**
+  String get onboardingDesc1;
+
+  /// Label for onboarding title 2
+  ///
+  /// In en, this message translates to:
+  /// **'Built for serious startups'**
+  String get onboardingTitle2;
+
+  /// Label for onboarding title 2 description
+  ///
+  /// In en, this message translates to:
+  /// **'Use clean structure, scalable state management, networking, and CI/CD from day one.'**
+  String get onboardingDesc2;
+
+  /// Label for onboarding title 3
+  ///
+  /// In en, this message translates to:
+  /// **'Save weeks of setup'**
+  String get onboardingTitle3;
+
+  /// Label for onboarding title 3 description
+  ///
+  /// In en, this message translates to:
+  /// **'No more repeating flavors, rename configs, tests, icons, or boilerplate every new project.'**
+  String get onboardingDesc3;
+
+  /// Label for onboarding title 4
+  ///
+  /// In en, this message translates to:
+  /// **'Build. Launch. Grow.'**
+  String get onboardingTitle4;
+
+  /// Label for onboarding title 4 description
+  ///
+  /// In en, this message translates to:
+  /// **'Focus on solving real problems and shipping products faster with Startup Launch.'**
+  String get onboardingDesc4;
 }
 
 class _AppLocalizationsDelegate

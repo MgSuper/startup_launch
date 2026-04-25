@@ -31,4 +31,41 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get auto => 'อัตโนมัติ';
+
+  @override
+  String get skip => 'ข้าม';
+
+  @override
+  String get next => 'ถัดไป';
+
+  @override
+  String get getStarted => 'เริ่มต้น';
+
+  @override
+  String get onboardingTitle1 => 'เปิดตัวไอเดียได้เร็วขึ้น';
+
+  @override
+  String get onboardingDesc1 =>
+      'เริ่มแอป Flutter ตัวถัดไปด้วยโครงสร้างพร้อมใช้งานจริง ระบบธีม เส้นทาง และหลายภาษาที่ตั้งค่าไว้แล้ว';
+
+  @override
+  String get onboardingTitle2 => 'สร้างมาเพื่อสตาร์ทอัพจริงจัง';
+
+  @override
+  String get onboardingDesc2 =>
+      'ใช้โครงสร้างที่เป็นระเบียบ การจัดการสถานะที่ขยายได้ ระบบเครือข่าย และ CI/CD ตั้งแต่วันแรก';
+
+  @override
+  String get onboardingTitle3 => 'ประหยัดเวลาหลายสัปดาห์';
+
+  @override
+  String get onboardingDesc3 =>
+      'ไม่ต้องทำซ้ำเรื่อง flavors การเปลี่ยนชื่อแอป tests icons หรือ boilerplate ทุกครั้งที่เริ่มโปรเจกต์ใหม่';
+
+  @override
+  String get onboardingTitle4 => 'สร้าง เปิดตัว เติบโต';
+
+  @override
+  String get onboardingDesc4 =>
+      'โฟกัสกับการแก้ปัญหาจริง และปล่อยโปรดักต์ได้เร็วขึ้นด้วย Startup Launch';
 }

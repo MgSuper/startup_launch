@@ -4,6 +4,7 @@ import 'package:startup_launch/app/theme/theme_cubit.dart';
 import 'package:startup_launch/core/config/app_config.dart';
 import 'package:startup_launch/core/network/api_client.dart';
 import 'package:startup_launch/core/network/dio_factory.dart';
+import 'package:startup_launch/features/onboarding/data/onboarding_storage.dart';
 
 final sl = GetIt.instance;
 
@@ -20,4 +21,10 @@ Future<void> setupLocator(AppConfig config) async {
   // Use registerSingleton instead of Lazy if you plan to init them immediately
   sl.registerSingleton(ThemeCubit());
   sl.registerSingleton(LocaleCubit());
+
+  if (!sl.isRegistered<OnboardingStorage>()) {
+    sl.registerLazySingleton<OnboardingStorage>(
+      SharedPrefsOnboardingStorage.new,
+    );
+  }
 }

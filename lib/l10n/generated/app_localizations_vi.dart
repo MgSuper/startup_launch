@@ -31,4 +31,41 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get auto => 'Tự động';
+
+  @override
+  String get skip => 'Bỏ qua';
+
+  @override
+  String get next => 'Tiếp theo';
+
+  @override
+  String get getStarted => 'Bắt đầu';
+
+  @override
+  String get onboardingTitle1 => 'Ra mắt ý tưởng nhanh hơn';
+
+  @override
+  String get onboardingDesc1 =>
+      'Bắt đầu ứng dụng Flutter tiếp theo với kiến trúc production, theme, routing và đa ngôn ngữ đã sẵn sàng.';
+
+  @override
+  String get onboardingTitle2 => 'Dành cho startup nghiêm túc';
+
+  @override
+  String get onboardingDesc2 =>
+      'Sử dụng cấu trúc sạch, quản lý trạng thái mở rộng tốt, networking và CI/CD ngay từ ngày đầu.';
+
+  @override
+  String get onboardingTitle3 => 'Tiết kiệm hàng tuần thiết lập';
+
+  @override
+  String get onboardingDesc3 =>
+      'Không cần lặp lại flavors, đổi tên app, tests, icons hay boilerplate cho mỗi dự án mới.';
+
+  @override
+  String get onboardingTitle4 => 'Xây dựng. Ra mắt. Phát triển.';
+
+  @override
+  String get onboardingDesc4 =>
+      'Tập trung giải quyết vấn đề thật và phát hành sản phẩm nhanh hơn với Startup Launch.';
 }

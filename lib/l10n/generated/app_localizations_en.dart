@@ -31,4 +31,41 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get auto => 'Auto';
+
+  @override
+  String get skip => 'Skip';
+
+  @override
+  String get next => 'Next';
+
+  @override
+  String get getStarted => 'Get Started';
+
+  @override
+  String get onboardingTitle1 => 'Launch ideas faster';
+
+  @override
+  String get onboardingDesc1 =>
+      'Start your next Flutter app with production-ready architecture, themes, routing, and localization already setup.';
+
+  @override
+  String get onboardingTitle2 => 'Built for serious startups';
+
+  @override
+  String get onboardingDesc2 =>
+      'Use clean structure, scalable state management, networking, and CI/CD from day one.';
+
+  @override
+  String get onboardingTitle3 => 'Save weeks of setup';
+
+  @override
+  String get onboardingDesc3 =>
+      'No more repeating flavors, rename configs, tests, icons, or boilerplate every new project.';
+
+  @override
+  String get onboardingTitle4 => 'Build. Launch. Grow.';
+
+  @override
+  String get onboardingDesc4 =>
+      'Focus on solving real problems and shipping products faster with Startup Launch.';
 }
