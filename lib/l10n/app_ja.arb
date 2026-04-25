@@ -1,0 +1,35 @@
+{
+  "@@locale": "ja",
+  "appName": "スタートアップ・ランチャー",
+  "@appName": {
+    "description": "The name of the application"
+  },
+  "homeTitle": "ホーム",
+  "@homeTitle": {
+    "description": "Title displayed on the Home screen"
+  },
+  "settings": "設定",
+  "@settings": {
+    "description": "Label for the settings menu"
+  },
+  "changeLanguage": "言語切替",
+  "@changeLanguage": {
+    "description": "Label for the language selection option"
+  },
+  "appearance": "外観モード",
+  "@appearance": {
+    "description": "Label for the theme selection option"
+  },
+  "light": "ライト",
+  "@light": {
+    "description": "Label for the light theme selection option"
+  },
+  "dark": "ダーク",
+  "@dark": {
+    "description": "Label for the dark theme selection option"
+  },
+  "auto": "自動",
+  "@auto": {
+    "description": "Label for the auto theme selection option"
+  }
+}

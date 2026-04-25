@@ -1,0 +1,35 @@
+{
+  "@@locale": "th",
+  "appName": "ตัวเปิดสตาร์ทอัพ",
+  "@appName": {
+    "description": "The name of the application"
+  },
+  "homeTitle": "หน้าแรก",
+  "@homeTitle": {
+    "description": "Title displayed on the Home screen"
+  },
+  "settings": "การตั้งค่า",
+  "@settings": {
+    "description": "Label for the settings menu"
+  },
+  "changeLanguage": "เปลี่ยนภาษา",
+  "@changeLanguage": {
+    "description": "Label for the language selection option"
+  },
+  "appearance": "การปรากฏ",
+  "@appearance": {
+    "description": "Label for the theme selection option"
+  },
+  "light": "สว่าง",
+  "@light": {
+    "description": "Label for the light theme selection option"
+  },
+  "dark": "มืด",
+  "@dark": {
+    "description": "Label for the dark theme selection option"
+  },
+  "auto": "อัตโนมัติ",
+  "@auto": {
+    "description": "Label for the auto theme selection option"
+  }
+}
