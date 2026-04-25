@@ -69,12 +69,31 @@ jobs:
             build/app/outputs/flutter-apk/*.apk
             build/app/outputs/bundle/prodRelease/*.aab
 
-      - name: Notify Telegram
+      - name: Telegram Notification
         if: always()
         run: |
           STATUS="${{ job.status }}"
-          MESSAGE="🚀 startup_launch CI: $STATUS"
+          REPO="${{ github.repository }}"
+          BRANCH="${{ github.ref_name }}"
+          ACTOR="${{ github.actor }}"
+          COMMIT="${{ github.event.head_commit.message }}"
+          RUN="${{ github.run_number }}"
 
+          if [ "$STATUS" = "success" ]; then
+            ICON="✅"
+          else
+            ICON="❌"
+          fi
+
+          # Construct the message
+          MESSAGE="$ICON CI $STATUS
+          📦 Repo: $REPO
+          🌿 Branch: $BRANCH
+          👤 Actor: $ACTOR
+          📝 Commit: $COMMIT
+          🔢 Run: #$RUN"
+
+          # Send to Telegram
           curl -s -X POST https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage \
-          -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
-          -d text="$MESSAGE"
+            -d chat_id=${{ secrets.TELEGRAM_CHAT_ID }} \
+            -d text="$MESSAGE"

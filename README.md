@@ -1,5 +1,7 @@
 ![CI](https://github.com/MgSuper/startup_launch/actions/workflows/flutter_ci.yml/badge.svg)
 
+Use this repository as a GitHub Template to launch new Flutter startups fast.
+
 # Startup Launch
 
 A production-ready Flutter starter template built for speed, scalability, and rapid startup launches.
