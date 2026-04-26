@@ -1,125 +1,132 @@
-![CI](https://github.com/MgSuper/startup_launch/actions/workflows/flutter_ci.yml/badge.svg)
-
-Use this repository as a GitHub Template to launch new Flutter startups fast.
+![CI](https://github.com/MgSuper/startup_launch/actions/workflows/flutter_elite_ci.yml/badge.svg)
 
 # Startup Launch
 
-A production-ready Flutter starter template built for speed, scalability, and rapid startup launches.
+Launch production-ready Flutter startups in minutes.
 
-Create new app ideas in minutes — not days.
+A powerful Flutter starter template built for speed, scalability, automation, and real product launches.
+
+Use this repository as a GitHub Template to create new startup apps instantly.
 
 ---
 
-## Features
+# Why Startup Launch?
 
-### Core Architecture
+Most Flutter projects waste days rebuilding the same things:
+
+- routing
+- themes
+- localization
+- startup structure
+- flavors
+- CI/CD
+- onboarding
+- splash screen
+- testing
+
+Startup Launch solves it once — so you can focus on shipping products.
+
+---
+
+# ⚡ Core Features
+
+## Architecture
 
 - Clean scalable structure
+- Feature-first architecture
 - Dependency Injection (`get_it`)
 - State Management (`flutter_bloc`)
 - Navigation (`go_router`)
-- Feature-first ready architecture
+- Reusable core modules
 
-### UI System
+## UI System
 
 - Material 3
 - Light / Dark / System theme
 - Runtime theme switching
-- Design token structure
 - Responsive-ready foundation
 
-### Localization
+## Localization
 
-- Multi-language support
 - English 🇺🇸
 - Vietnamese 🇻🇳
 - Japanese 🇯🇵
 - Thai 🇹🇭
 - Runtime language switching
-- Persist selected language
+- Persistent selected language
+- Onboarding language selector
 
-### Networking
+## Launch Experience
+
+- Native Splash Screen
+- Dark mode splash support
+- First-launch onboarding flow
+- Skip onboarding after first run
+
+## Networking
 
 - `dio` API client
-- Auth interceptor
-- Connectivity guard
+- Auth interceptor ready
+- Connectivity guard ready
 - Refresh token ready
 - Error handling foundation
 
-### Productivity
+## Productivity
 
 - Android flavors (`dev`, `staging`, `prod`)
 - iOS schemes (`dev`, `staging`, `prod`)
 - Environment banners
 - Different app icons per flavor
-- Rename app script ready
+- GitHub Template mode
+- One-command startup generator
 
-### Quality
+## Quality
 
-- GitHub Actions CI
+- GitHub Actions CI/CD
+- APK / AAB build artifacts
+- Release automation
+- Telegram notifications
 - Static analysis
-- Unit test ready
+- Unit tests
+- Widget tests
+- Router tests
+- Coverage-ready CI
+- Strict lints
 
 ---
 
-## Tech Stack
+# Tech Stack
 
-- Flutter
-- Dart
-- flutter_bloc
-- get_it
-- go_router
-- dio
-- shared_preferences
-- flutter_secure_storage
-- intl
+Flutter • Dart • flutter_bloc • get_it • go_router • dio • shared_preferences
 
 ---
 
-## Getting Started
+# Quick Start
 
-### Clone Project
+## Use as Template
+
+Click **Use this template** on GitHub.
+
+## One-command Startup Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/startup_launch.git
-cd startup_launch
-flutter pub get
-```
-
----
-
-## Run Flavors
-
-### Development
-
-```bash
+sh scripts/create_startup.sh "My Startup" com.company.mystartup
 flutter run --flavor dev -t lib/main_dev.dart
 ```
 
-### Staging
+---
+
+# Run Flavors
 
 ```bash
+flutter run --flavor dev -t lib/main_dev.dart
 flutter run --flavor staging -t lib/main_staging.dart
-```
-
-### Production
-
-```bash
 flutter run --flavor prod -t lib/main_prod.dart
 ```
 
 ---
 
-## One-command startup generator
-
-```bash
-sh scripts/create_startup.sh "My App" com.company.myapp
-flutter run --flavor dev -t lib/main_dev.dart
-```
-
----
-
-## Generate Flavor Icons
+# Generate Flavor Icons
 
 ```bash
 dart run flutter_launcher_icons -f flutter_launcher_icons-dev.yaml
@@ -129,7 +136,7 @@ dart run flutter_launcher_icons -f flutter_launcher_icons-prod.yaml
 
 ---
 
-## Run Tests
+# Run Tests
 
 ```bash
 flutter test
@@ -137,29 +144,16 @@ flutter test
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```text
 lib/
 ├── app/
-│   ├── localization/
-│   ├── theme/
-│   ├── router.dart
-│   └── app.dart
-│
 ├── core/
-│   ├── config/
-│   ├── di/
-│   ├── network/
-│   ├── extensions/
-│   ├── error/
-|   ├── state/
-│   ├── storage/
-|   ├── utils/
-│   ├── widgets/
 ├── features/
-│   └── sample_feature/
-│
+│   ├── onboarding/
+│   ├── home/
+│   └── settings/
 ├── main_common.dart
 ├── main_dev.dart
 ├── main_staging.dart
@@ -168,40 +162,32 @@ lib/
 
 ---
 
-## Why This Template Exists
+# Built For
 
-Most Flutter projects waste time rebuilding:
-
-- themes
-- routing
-- localization
-- networking
-- startup configs
-- flavors
-- CI
-
-This template solves it once.
-
-Ship ideas faster.
+- startup MVPs
+- SaaS mobile apps
+- client projects
+- rapid idea validation
+- serious Flutter side projects
 
 ---
 
-## Roadmap
+# Roadmap
 
 - [ ] Firebase flavor setup
 - [ ] Supabase starter option
-- [ ] Fastlane deployment
+- [ ] Fastlane deploy
 - [ ] Crashlytics integration
 - [ ] Analytics module
 
 ---
 
-## License
+# License
 
 MIT
 
 ---
 
-## Support
+# Support
 
-If this project helps you, give it a star.
+If Startup Launch helps you, give it a star.
